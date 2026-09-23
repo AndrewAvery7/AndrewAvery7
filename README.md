@@ -40,19 +40,24 @@ The first two were other people's software. The third was mine, which is the har
 
 Every LLM cost calculator on the web is a snapshot: someone hard-codes a dozen prices and within
 months the premise is wrong. PromptSpend is built the other way round — **the pipeline is the product.**
-Every morning a GitHub Action re-checks 69 models across 12 providers, merges sources under an explicit
+Every morning a GitHub Action re-checks 80 models across 12 providers, merges sources under an explicit
 trust order, and a run that loses a source or would shrink the catalogue publishes nothing and fails loudly.
 
 The differentiator is provenance, not breadth. Competitors advertise more models. Here every price carries
 the vendor page it was read from and the date it was read, and prices two sources disagree about are
-**marked rather than quietly resolved**. 43 of the 69 have been read against a vendor's own page; the other
-26 stay labelled as feed-sourced, because using an aggregator to close that gap would launder a third
+**marked rather than quietly resolved**. 58 of the 80 have been read against a vendor's own page; the other
+22 stay labelled as feed-sourced, because using an aggregator to close that gap would launder a third
 party's number into a first-party claim.
 
-Answers in four places — [the site](https://promptspend.com), a keyless CORS-open API with an OpenAPI 3.1
-description, an MCP server on npm so a coding agent gets the same figures with the same paperwork, and a
-VS Code extension that annotates a model id inline with its rate and the date it was last confirmed.
-737 automated tests across six suites, 112 of them in a real browser across four viewports, axe auditing
+Answers in five places — [the site](https://promptspend.com), including a Receipt you paste into an existing AI
+conversation for a one-response cost audit; free native apps for
+[iPhone](https://apps.apple.com/app/id6800386428) and [Android](https://play.google.com/store/apps/details?id=com.promptspend.app)
+that price a pasted conversation on the device; a keyless CORS-open API with an OpenAPI 3.1 description; an MCP
+server on npm so a coding agent gets the same figures with the same paperwork; and a VS Code extension that
+annotates a model id inline with its rate and the date it was last confirmed. Price changes arrive by Atom feed,
+browser push or double-opt-in email, and the catalogue's own change history is what the
+[August 2026 Price Movement Report](https://promptspend.com/writing/2026-08-price-movement-report/) is written from.
+1,232 automated tests across seven suites, 164 of them in a real browser across four viewports, axe auditing
 at WCAG 2.1 A/AA. No accounts, no analytics, no cookies.
 
 https://github.com/user-attachments/assets/8ddf3e53-2a97-4d86-ac93-d09507c387de
@@ -80,7 +85,7 @@ A desktop launcher does the same without spending a Claude token, which matters 
 The Windows false-failure diagnosis above was submitted upstream as
 [codex-plugin-cc#551](https://github.com/openai/codex-plugin-cc/pull/551): a 19-line fix, unit-tested, verified
 against a real Windows 11 ledger. It was closed without review after the repository went quiet;
-[issue #513](https://github.com/openai/codex-plugin-cc/issues/513) is still open and the bug is still there.
+the bug is still there, now tracked upstream as [issue #618](https://github.com/openai/codex-plugin-cc/issues/618).
 The fix ships here instead — this kit detects the imported thread directly in Codex's state database, because
 it trusts the evidence rather than the success message.
 
