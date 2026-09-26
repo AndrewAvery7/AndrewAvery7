@@ -110,7 +110,9 @@ evaluating generative-AI use cases against ROI, accuracy and risk criteria.
 
 Post-graduate **AI &amp; Machine Learning: Business Applications** at UT Austin (McCombs), in progress — four graded
 builds spanning multi-agent automation, RAG document analysis, predictive-maintenance networks and clinical
-decision support. Executive education in AI strategy at **UC Berkeley (Haas)**. 19 AI certifications alongside
+decision support. The first build, a wind-turbine drivetrain-fault classifier, is complete, and a program hackathon
+on restaurant revenue, built with Claude Cowork, placed 7th of 53; both are written up in full at
+[averyresume.com/mccombs.html](https://averyresume.com/mccombs.html). Executive education in AI strategy at **UC Berkeley (Haas)**. 19 AI certifications alongside
 CSM, CAL-E and CPP.
 
 Ships code daily with Claude Code and Cursor, with evidence-based judgment about where LLM-assisted
