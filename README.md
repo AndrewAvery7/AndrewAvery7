@@ -130,7 +130,7 @@ development helps and where it does not — evidenced by the three repositories 
   &nbsp;·&nbsp;
   <a href="mailto:andrew@averyemail.com">andrew@averyemail.com</a>
   &nbsp;·&nbsp;
-  <a href="https://averyresume.com/resume-request.html">Résumé</a>
+  <a href="https://averyresume.com/resume-request.html">Resume</a>
   &nbsp;·&nbsp;
   <a href="https://linkedin.com/in/andrewavery">LinkedIn</a>
 </p>
