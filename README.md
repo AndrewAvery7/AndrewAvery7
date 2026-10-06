@@ -135,7 +135,7 @@ on restaurant revenue, built with Claude Cowork, placed 7th of 53; both are writ
 CSM, CAL-E and CPP.
 
 Ships code daily with Claude Code and Cursor, with evidence-based judgment about where LLM-assisted
-development helps and where it does not — evidenced by the three repositories above rather than asserted.
+development helps and where it does not — evidenced by the repositories above rather than asserted.
 
 ---
 
