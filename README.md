@@ -22,9 +22,9 @@
 
 ---
 
-## Three projects. One rule.
+## Five projects. One rule.
 
-Each of these began the same way. A tool reported a result, and the result was not true.
+Three of these began the same way. A tool reported a result, and the result was not true. The other two are built so the result can always be checked.
 
 | Project | What the tool reported | What was actually happening |
 |---|---|---|
@@ -40,24 +40,24 @@ The first two were other people's software. The third was mine, which is the har
 
 Every LLM cost calculator on the web is a snapshot: someone hard-codes a dozen prices and within
 months the premise is wrong. PromptSpend is built the other way round — **the pipeline is the product.**
-Every morning a GitHub Action re-checks 80 models across 12 providers, merges sources under an explicit
+Every morning a GitHub Action re-checks 81 models across 12 providers, merges sources under an explicit
 trust order, and a run that loses a source or would shrink the catalogue publishes nothing and fails loudly.
 
 The differentiator is provenance, not breadth. Competitors advertise more models. Here every price carries
 the vendor page it was read from and the date it was read, and prices two sources disagree about are
-**marked rather than quietly resolved**. 58 of the 80 have been read against a vendor's own page; the other
-22 stay labelled as feed-sourced, because using an aggregator to close that gap would launder a third
+**marked rather than quietly resolved**. Most of the catalogue has been read against a vendor's own page; the
+rest stay labelled as feed-sourced, because using an aggregator to close that gap would launder a third
 party's number into a first-party claim.
 
 Answers in five places — [the site](https://promptspend.com), including a Receipt you paste into an existing AI
 conversation for a one-response cost audit; free native apps for
 [iPhone](https://apps.apple.com/app/id6800386428) and [Android](https://play.google.com/store/apps/details?id=com.promptspend.app)
 that price a pasted conversation on the device; a keyless CORS-open API with an OpenAPI 3.1 description; an MCP
-server on npm so a coding agent gets the same figures with the same paperwork; and a VS Code extension that
+server on [npm](https://www.npmjs.com/package/@promptspend/mcp) so a coding agent gets the same figures with the same paperwork; and a VS Code extension ([Open VSX](https://open-vsx.org/extension/promptspend/promptspend)) that
 annotates a model id inline with its rate and the date it was last confirmed. Price changes arrive by Atom feed,
 browser push or double-opt-in email, and the catalogue's own change history is what the
 [August 2026 Price Movement Report](https://promptspend.com/writing/2026-08-price-movement-report/) is written from.
-1,232 automated tests across seven suites, 164 of them in a real browser across four viewports, axe auditing
+1,380 automated tests, 188 of them in a real browser across four viewports, axe auditing
 at WCAG 2.1 A/AA. No accounts, no analytics, no cookies.
 
 https://github.com/user-attachments/assets/8ddf3e53-2a97-4d86-ac93-d09507c387de
@@ -88,6 +88,25 @@ against a real Windows 11 ledger. It was closed without review after the reposit
 the bug is still there, now tracked upstream as [issue #618](https://github.com/openai/codex-plugin-cc/issues/618).
 The fix ships here instead — this kit detects the imported thread directly in Codex's state database, because
 it trusts the evidence rather than the success message.
+
+### [Ground Truth](https://github.com/AndrewAvery7/ground-truth) — a job search that reads everything and lies about nothing
+
+An operations system for a real job search. Twice a day it reads the job-alert emails I already receive, applies the
+hard rules in deterministic code, researches every survivor back to the employer's own posting, scores fit from
+evidence it quotes, and — only when asked — drafts an application package. A separate agent checks every claim in it
+against an untouched master résumé, and a line the record cannot support is held back. It never submits
+anything on its own. The repository is the public half of the live system: the agents' instruction files, the screener
+and claims checker (deliberately code, not AI), runnable examples with a fictional candidate, and the guardrails.
+Its first three days of run reports are published, re-added by hand because a model wrote them. Standard library only,
+MIT, [citable](https://doi.org/10.5281/zenodo.23090642). [Film and live demo](https://averyresume.com/system/).
+
+### [Vialmetry](https://vialmetry.app) — a logbook that shows its arithmetic
+
+A private logbook for the vials you mix, the units you draw and the injection sites you use, with the working shown
+behind every number so you can check it yourself. Local-first: no account needed, no ads, no tracking in the app, and it
+never recommends a dose — it calculates and records. Native apps for
+[iPhone and iPad](https://apps.apple.com/app/id6814296316) and
+[Android](https://play.google.com/store/apps/details?id=com.crestwoodholdings.vialmetry).
 
 ---
 
