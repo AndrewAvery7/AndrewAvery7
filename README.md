@@ -24,15 +24,16 @@
 
 ## Five projects. One rule.
 
-Three of these began the same way. A tool reported a result, and the result was not true. The other two are built so the result can always be checked.
+Four of these began the same way. A tool reported a result, and the result was not true. The fifth, Vialmetry, is built so the result can always be checked.
 
 | Project | What the tool reported | What was actually happening |
 |---|---|---|
 | **[claude-codex-bridge](https://github.com/AndrewAvery7/claude-codex-bridge)** | Transfer failed. | The transfer had **succeeded**. Codex writes ledger paths with the Windows `\\?\` extended-length prefix; the lookup compared them against `realpathSync` output, which does not carry it. Two spellings of the same path, never equal. |
 | **[claude-markitdown-hook](https://github.com/AndrewAvery7/claude-markitdown-hook)** | Conversion succeeded. Exit code 0. | **Nothing had been extracted.** An image-only PDF has no text layer, so the converter writes an empty file and exits clean. Hand that to a model and it will tell you, with total confidence, that your document is blank. |
 | **[PromptSpend](https://github.com/AndrewAvery7/promptspend)** | 70 prices, all confirmed this morning. | Twelve of them carried a confirmation date **one day after** the verification that supposedly produced it. A price cannot be confirmed tomorrow. The catalogue was describing work that had never happened. |
+| **[Ground Truth](https://github.com/AndrewAvery7/ground-truth)** | Job-alert emails: open roles, apply now. | Of **1,577** listings read in three days, **40** were already closed and **14** had no real posting behind them. The aggregators were still advertising both. |
 
-The first two were other people's software. The third was mine, which is the harder version of the same discipline.
+The first two were other people's software. The last two were mine, which is the harder version of the same discipline.
 
 ---
 
