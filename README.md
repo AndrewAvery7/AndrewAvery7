@@ -134,3 +134,7 @@ development helps and where it does not — evidenced by the three repositories 
   &nbsp;·&nbsp;
   <a href="https://linkedin.com/in/andrewavery">LinkedIn</a>
 </p>
+
+<p align="center">
+  <a href="https://u8views.com/github/AndrewAvery7"><img src="https://u8views.com/api/v1/github/profiles/204509720/views/day-week-month-total-count.svg" alt="Profile views"></a>
+</p>
