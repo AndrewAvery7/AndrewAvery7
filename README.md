@@ -137,5 +137,5 @@ development helps and where it does not — evidenced by the three repositories 
 
 <p align="center">
   <a href="https://u8views.com/github/AndrewAvery7"><img src="https://u8views.com/api/v1/github/profiles/204509720/views/day-week-month-total-count.svg" alt="Profile views"></a>
-  <a href="https://www.npmjs.com/package/@promptspend/mcp"><img src="https://img.shields.io/npm/dt/@promptspend/mcp?label=PromptSpend%20MCP%20downloads&labelColor=24292f&color=6d96ff&style=flat" alt="PromptSpend MCP npm downloads" height="26"></a>
+  <a href="https://www.npmjs.com/package/@promptspend/mcp"><img src="https://img.shields.io/npm/dt/@promptspend/mcp?label=PromptSpend%20MCP%20downloads&labelColor=24292f&color=6d96ff&style=flat" alt="PromptSpend MCP npm downloads" height="24"></a>
 </p>
