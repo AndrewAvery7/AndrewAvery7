@@ -78,6 +78,8 @@ Image-only PDFs measure 0–40 characters per page; real text PDFs measure 650�
 with vision instead. 41 tests, twelve formats, CI across Windows, macOS and Linux on Python 3.10 and 3.12.
 No OCR, no server, no telemetry.
 
+▶ [Watch the 1:15 video](https://github.com/user-attachments/assets/6f91aabe-1deb-48e5-9eb1-2fd7875efa52)
+
 ### [claude-codex-bridge](https://github.com/AndrewAvery7/claude-codex-bridge) — hand a live session to another model
 
 One command moves a running Claude Code session into OpenAI Codex with the conversation, skills, operating
@@ -91,6 +93,8 @@ the bug is still there, now tracked upstream as [issue #618](https://github.com/
 The fix ships here instead — this kit detects the imported thread directly in Codex's state database, because
 it trusts the evidence rather than the success message.
 
+▶ [Watch the 1:05 video](https://github.com/user-attachments/assets/f65f9868-c238-43d4-b97b-545606996cd3)
+
 ### [Ground Truth](https://github.com/AndrewAvery7/ground-truth) — a job search that reads everything and lies about nothing
 
 An operations system for a real job search. Twice a day it reads the job-alert emails I already receive, applies the
@@ -100,7 +104,9 @@ against an untouched master résumé, and a line the record cannot support is he
 anything on its own. The repository is the public half of the live system: the agents' instruction files, the screener
 and claims checker (deliberately code, not AI), runnable examples with a fictional candidate, and the guardrails.
 Its first three days of run reports are published, re-added by hand because a model wrote them. Standard library only,
-MIT, [citable](https://doi.org/10.5281/zenodo.23090642). [Film and live demo](https://averyresume.com/system/).
+MIT, [citable](https://doi.org/10.5281/zenodo.23090642). [Live demo and write-up](https://averyresume.com/system/).
+
+▶ [Watch the 93-second film](https://github.com/AndrewAvery7/ground-truth/blob/main/media/ground-truth-film.mp4)
 
 ### [Vialmetry](https://vialmetry.app) — a logbook that shows its arithmetic
 
@@ -109,6 +115,8 @@ behind every number so you can check it yourself. Local-first: no account needed
 never recommends a dose — it calculates and records. Native apps for
 [iPhone and iPad](https://apps.apple.com/app/id6814296316) and
 [Android](https://play.google.com/store/apps/details?id=com.crestwoodholdings.vialmetry).
+
+▶ [Watch the one-minute tour](https://vialmetry.app/#film)
 
 ---
 
